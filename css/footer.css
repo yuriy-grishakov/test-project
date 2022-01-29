@@ -1,0 +1,179 @@
+.footer {
+	background-color: var(--color-1);
+	padding-top: 60px;
+	padding-bottom: 60px;
+	color: #fff;
+}
+
+.footer-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-wrap__item {
+	display: block;
+}
+
+.footer-wrap__title {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.footer-payment,
+.footer-social {
+	display: flex;
+	align-items: center;
+	grid-column-gap: 28px;
+}
+
+.footer-payment {
+	margin-top: -10px;
+}
+
+.payment__item_master {
+	height: 42px;
+	width: 70px;
+}
+
+.footer-social__link {
+	text-decoration: none;
+}
+
+.footer-contacts {
+	display: grid;
+	grid-row-gap: 10px;
+}
+
+.footer-contacts__link {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	transition: color .5s ease;
+}
+
+.footer-contacts__link:hover {
+	color: #CB00CA;
+	transition: color .5s ease;
+}
+
+.footer-contacts__link img {
+	margin-right: 10px;
+	margin-bottom: -3px;
+}
+
+
+.copyright {
+	display: block;
+	margin-top: 60px;
+	font-size: 16px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.copyright:hover {
+	text-decoration: underline;
+}
+
+
+
+/*   responsive   */
+
+
+
+
+@media (max-width:  1399px) {
+
+	.footer-wrap__title {
+		font-size: 18px;
+	}
+
+	.footer-contacts__link {
+		font-size: 18px;
+	}
+
+    .footer-payment {
+        grid-column-gap: 13px;
+    }
+
+    .footer-payment img {
+    	height: 40px;
+    	width: auto;
+    }
+}
+
+
+@media (max-width:  1199px) {
+
+    .footer-payment img {
+    	height: 30px;
+    }
+
+    .footer-wrap__title {
+    	margin-bottom: 10px;
+    }
+
+    .footer-payment {
+    	margin: 0;
+    }
+
+    .copyright {
+    	font-size: 15px;
+    	margin-top: 50px;
+    }
+}
+
+@media (max-width:  991px) {
+
+	.footer-wrap {
+		position: relative;
+		padding-top: 55px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 35px;
+	}
+
+	.footer-wrap__item_logo {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+    
+}
+
+@media (max-width:  767px) {
+
+    
+}
+
+
+@media (max-width: 575px) {
+
+	.footer-wrap {
+		display: flex;
+		flex-direction: column;
+	}
+    
+}
+
+@media (max-width: 359px) {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

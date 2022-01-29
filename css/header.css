@@ -1,0 +1,295 @@
+body {
+	position: relative;
+	z-index: 0;
+}
+
+.header {
+	background-color: #262628;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-logo {
+	display: block;
+	margin-right: 70px;
+}
+
+.header-block {
+	display: flex;
+	align-items: center;
+}
+
+.header-block {
+	margin-left: auto;
+}
+
+.menu {
+	margin-right: 120px;
+}
+
+.menu__list {
+	display: flex;
+	align-items: center;
+	width: 855px;
+	justify-content: space-between;
+}
+
+.menu__item {
+	display: block;
+}
+
+.menu__link {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-cart {
+	position: relative;
+	margin-right: 60px;
+	width: 40px;
+}
+
+.header-cart__number-block {
+	background-color: var(--color-3);
+	border-radius: 50%;
+	color: #fff;
+	height: 23px;
+	min-width: 23px;
+	width: 23px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	line-height: 1.6em;
+}
+
+.header-cart__number {}
+
+.header-btn-block {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+}
+
+.header-btn-block__login-block {
+	display: flex;
+	align-items: center;
+	display: none;
+}
+
+.header-btn-block__registration {
+	color: #fff;
+	margin-right: 35px;
+}
+
+.header-btn-block__login,
+.header-btn-block__exit {
+	background: #FFFFFF;
+	border-radius: 25px;
+	padding: 10px 20px 8px;
+	font-size: 20px;
+	color: var(--color-3);
+	text-decoration: none;	
+	position: relative;
+	z-index: 1;
+}
+
+.header-btn-block__exit {
+	display: none;
+}
+ 
+.header-btn-block__exit.show {
+	display: block;
+}
+
+.header-btn-block__login-block.show  {
+	display: flex;
+}
+
+/* Гамбургер иконка */
+.menu-btn {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+	border: none;
+	background-color: transparent;
+	display: none;
+}
+
+.menu-btn span {
+	width: 40px;
+	height: 3px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--color-3);
+	transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+
+
+
+
+/*   responsive   */
+
+@media (max-width:  1799px) {
+
+	.header-block {
+		margin-left: 0;
+	}
+
+    .menu__list, .menu {
+		width: 100%;
+	}
+
+	.menu__list {
+		justify-content: space-between;
+		grid-column-gap: 25px;
+	}
+}
+
+
+@media (max-width:  1499px) {
+
+	.header {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	} 
+
+	.menu-btn {
+		display: block;
+		z-index: 200;
+	}
+
+	.header-block {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 15px;
+		background: var(--color-2);
+		z-index: 100;
+		transform: translateX(-100%);
+		transition: transform 0.5s; 
+		padding-left: 200px;
+		padding-top: 100px;
+	}
+
+	.header-block.active {
+		transform: translateX(0);
+	}
+
+
+	.menu__list {
+		display: grid;
+		grid-gap: 1em;
+	}
+
+	.menu__link {
+		font-size: 20px;
+	}
+
+	.header-cart {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		display: block;
+	}
+
+}
+
+
+@media (max-width:  1399px) {
+
+    
+}
+
+
+@media (max-width:  1199px) {
+
+    
+}
+
+@media (max-width:  991px) {
+
+    .header-block  {
+    	padding-left: 100px;
+    	padding-top: 50px;
+    }
+}
+
+@media (max-width:  767px) {
+
+    
+}
+
+
+@media (max-width: 575px) {
+
+   .header-block  {
+    	padding-left: 40px;
+    	padding-top: 50px;
+    }
+}
+
+@media (max-width: 359px) {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
